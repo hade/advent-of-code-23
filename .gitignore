@@ -130,4 +130,5 @@ dist
 .pnp.*
 
 yarn.lock
+output.txt
 TODO.md

@@ -1,13 +1,4 @@
-import { fetchData, winningPoints} from './day04.js'
-
-test('test data sum', () => {
-    const win = fetchData('day04/test-input.txt', 'win')
-    const own = fetchData('day04/test-input.txt', 'own')
-    console.table(win)
-    console.table(own)
-    const sum = winningPoints(win, own)
-    expect(sum).toEqual(13)
-})
+import { fetchData, winningPoints, cardAmount } from './day04.js'
 
 test('prod data sum', () => {
     const win = fetchData('day04/input.txt', 'win')
@@ -15,7 +6,13 @@ test('prod data sum', () => {
     console.table(win)
     console.table(own)
     const sum = winningPoints(win, own)
-    expect(sum).toEqual(13)
+    expect(sum).toEqual(24542)
 })
 
+test('task2-prod-items', () => {
+    const win = fetchData('day04/input.txt', 'win')
+    const own = fetchData('day04/input.txt', 'own')
+    const sum = cardAmount(win, own)
+    expect(sum).toEqual(8736438)
+})
 
