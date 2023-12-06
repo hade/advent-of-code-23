@@ -1,4 +1,4 @@
-import { fetchData, enginePartsSum, isEnginePart} from './day03.js'
+import { fetchData, enginePartsSum, isEnginePart } from './day03.js'
 
 test('test data sum', () => {
     const data = fetchData('day03/test-input.txt')
